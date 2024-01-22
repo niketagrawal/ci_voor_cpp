@@ -1,4 +1,5 @@
 cmake_minimum_required(VERSION 3.12)
 project(hello)
 add_executable(hello hello.cpp)
-enable_test(NAME hello COMMAND main)
+enable_testing()
+add_test(NAME hello COMMAND main)
